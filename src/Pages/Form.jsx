@@ -20,7 +20,7 @@ function Form(props) {
     }, [nameSearchParam, phoneSearchParam, ageSearchParam, emailSearchParam])
 
     const handleOnClick = () => {
-        setClick(prevState => !prevState)
+        setClick(!click)
     }
 
     return (
@@ -54,7 +54,7 @@ function Form(props) {
             </div>
 
             {click === true
-                ? <p className='url'>{ `http://localhost:3000/contact/form?name=${props.name}&phone=${props.phone}&age=${props.age}$email=${props.email}` }</p>
+                ? <p className='url'>{ `http://localhost:3000/contact/form?name=${props.name}&phone=${props.phone}&age=${props.age}&email=${props.email}` }</p>
                 : ""
             }
         
