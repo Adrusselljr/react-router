@@ -8,10 +8,12 @@ function FormSubmit(props) {
 
             <div className="form">
                 <h1>User was Created!</h1><br/>
-                <p>Name: { props.name }</p><br/>
-                <p>Phone: { props.phone }</p><br/>
-                <p>Age: { props.age }</p><br/>
-                <p>Email: { props.email }</p><br/>
+                <div className="user">
+                    <p>Name: { props.name }</p><br/>
+                    <p>Phone: { props.phone }</p><br/>
+                    <p>Age: { props.age }</p><br/>
+                    <p>Email: { props.email }</p><br/>
+                </div>
             </div>
 
         </div>
